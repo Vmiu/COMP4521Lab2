@@ -67,7 +67,8 @@ fun SensorDisplay(sensorData: List<Pair<String, String>>) {
             .padding(16.dp)
     ) {
         items(sensorData) { (name, value) ->
-            Text(text = "$name: $value")
+            Text(text = "Sensor: $name")
+            Text(text = "Values: $value")
             HorizontalDivider()
         }
     }
